@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour
 {
+    public ShapeSettings shapeSettings;
+    public ColorSettings colorSettings;
     [Range(2, 256)] public int resolution = 10;
     [SerializeField, HideInInspector] private MeshFilter[] meshFilters;
     private TerrainFace[] _terrainFaces;
@@ -44,5 +46,10 @@ public class Planet : MonoBehaviour
         {
             face.ConstructMesh();
         }
+    }
+
+    private void GenerateColors()
+    {
+        
     }
 }
