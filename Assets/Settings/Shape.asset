@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Shape
   m_EditorClassIdentifier: 
   planetRadius: 1
+  noiseLayers: []
